@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+class myclass{
+public:
+myclass(){             //constructor , same name as class
+	cout<<"hello its constructor!";
+}
+};
+int main()
+{
+	myclass myobj;
+	return 0;
+}
