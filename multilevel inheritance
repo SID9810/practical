@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class myclass{                           //base class
+	public:
+		void myfunction()
+		{
+			cout<<"some content in prarent class"<<endl;
+		}
+		
+}; 
+                                         // derived class (child)
+class mychildclass: public myclass{
+ 	 
+};
+                                         //derived class(grand child)
+class   mygrandchild : public mychildclass {
+	 
+};
+int main()
+{
+	mygrandchild myobj;
+	myobj.myfunction();
+ 
+	return 0;
+}
