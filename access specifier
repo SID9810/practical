@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class employee{
+protected:               //protected access specifier
+		int salary;
+		
+};
+                        //derived class
+class programmer: public employee
+{
+	public:
+		int bonus;
+		void setsalary(int s)
+		{
+			salary =s;
+			
+		}
+		int getsalary(){
+			return salary;
+			
+		} 
+};
+int main()
+{
+	programmer myobj;
+	myobj.setsalary(50000);
+	myobj.bonus=15000;
+	cout<<"salary:"<<myobj.getsalary()<<endl;
+cout<<"bonus:"<<myobj.bonus;
+return 0;
+
+	
+}
